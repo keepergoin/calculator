@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator-grid">
+        <div class="screen">
+            <div id="operation"></div>
+            <div id="result"></div>
+        </div>
+        <button class="span-two" onclick="allClear()">AC</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="addOperation('/')">/</button>
+        <button onclick="addOperation('7')">7</button>
+        <button onclick="addOperation('8')">8</button>
+        <button onclick="addOperation('9')">9</button>
+        <button onclick="addOperation('*')">*</button>
+        <button onclick="addOperation('4')">4</button>
+        <button onclick="addOperation('5')">5</button>
+        <button onclick="addOperation('6')">6</button>
+        <button onclick="addOperation('+')">+</button>
+        <button onclick="addOperation('1')">1</button>
+        <button onclick="addOperation('2')">2</button>
+        <button onclick="addOperation('3')">3</button>
+        <button onclick="addOperation('-')">-</button>
+        <button onclick="addOperation('.')">.</button>
+        <button onclick="addOperation('0')">0</button>
+        <button class="span-two" onclick="equals()">=</button>
+    </div>
+</body>
+
+</html>
