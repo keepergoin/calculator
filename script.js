@@ -2,11 +2,16 @@ let operationHTML = document.getElementById("operation")
 let resultHTML = document.getElementById("result")
 
 let operation = []
+const possibleOperators = ["+", "-", "*", "/"];
 
 const addOperation = (numberOrOperation) => {
-    operation.push(numberOrOperation)
-    updateOperation()
-} 
+    let lastElement = operation[operation.length - 1]
+    // this condition is to avoid multiple operators in a row
+    if (!(possibleOperators.includes(lastElement) && possibleOperators.includes(numberOrOperation))) {
+        operation.push(numberOrOperation)
+        updateOperation()
+    } 
+}
 
 const equals = () => {
    let result = eval(operation.join(""))
